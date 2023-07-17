@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping method</title>
+    <link rel="stylesheet" href="decor_shipping.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="shipping_script.js"></script>
+</head>
+<body>
+    <div id="logOut-Box">
+        <button class="logOutButton" onclick="logOut()"><i class="fa fa-sign-out"></i>   Log out</button>
+    </div>
+    <div id="shipping-box" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="container">
+                <h1>Shipping method</h1>
+                <hr>
+                <label for="street_id"><b>House number</b></label>
+                <input type="number" placeholder="Enter your house number" id="street_number" name="street_number" required>
+                <label for="street_name"><b>Street name</b> </label>
+                <input type="text" placeholder="Enter street name" id="street_name" name="street_name" required>
+                <label for="shipping_country"><b>Country</b></label>
+                <input type="text" placeholder="Enter your country" id="shipping_country" name="shipping_country"  required>
+                <label for="country_id"><b>Post code</b></label>
+                <input type="text" placeholder="Enter post code" id="shipping_countryID" name="country_id" required>
+                <hr>
+                <button type="submit" id="order-button" onclick="return validateForm()">Order</button>
+            </div>
+        </form>
+    </div>
+    <script src="shipping_script.js"></script>
+</body>
+</html>

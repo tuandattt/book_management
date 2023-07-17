@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://cl-wpml.s3.ap-southeast-1.amazonaws.com/cam-nang-viec-lam/wp-content/uploads/2023/02/28141652/3692229-1-1024x1024.jpg);
+    background-size: cover;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/* Log out button */
+#logOut-Box {
+    height: 80px;
+}
+.logOutButton {
+    float: right;
+    margin-top: 20px;
+    margin-right: 2px;
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: rgb(91, 220, 91);
+    border-radius: 4px;
+    z-index: 1;
+    cursor: pointer;
+}
+input[type=text],  input[type="number"] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+h1 {
+    padding: 0 0 10px 0;
+}
+.container button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 20px 50px;
+}
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 0; /*Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    margin-top: 80px;
+}  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 2s;
+    animation: animatezoom 2s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }

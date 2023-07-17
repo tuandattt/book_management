@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="decor_product.css">
+    <link rel="stylesheet" href="D:\DatabaseLab\public\themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="product_script.js"></script>
+</head>
+
+<body>
+    <div id="Books">
+        <div id="Header">
+            <div class="Brand-name">BOOKSTORE <span style="color:rgb(203, 144, 144); font-weight: bold; font-size: 50px;font-style:italic;">TUAN DAT <i class="brand-icon ti-book"></i></span></div>
+            <div class="search-register">
+                <form action="">
+                    <input type="text" id="myInput" placeholder="Search products here...">
+                    <button type="submit" id="search-button" ><i class="search-btn ti-search"></i></button>
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="D:\DatabaseLab\public\menu.html">HOME</a></li>
+                <li><a href="">BOOKS</a></li>
+                <li><a href="D:\DatabaseLab\public\menu.html#best-seller">BEST SELLERS</a></li>
+                <li><a href="D:\DatabaseLab\public\menu.html#Sales">SALES</a></li>
+                <li><a href="D:\DatabaseLab\public\menu.html#footer">ABOUT US</a></li>
+            </ul>
+            <div class="shop-icon">
+                <button id="shop-btn">
+                    <i class="ti-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+        <!-- THE MODAL -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YOUR SHOPPING CART</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Product</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
+                    </div>
+                    <!-- LIST OF ITEMS THAT CUSTOMER BUYS -->
+                    <div class="cart-items">
+
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Sum: </strong>
+                        <span class="cart-total-price">0 $</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                    <button type="button" class="btn btn-primary order">Pay up</button>
+                </div>
+            </div>
+        </div>
+        <!-- LIST OF PRODUCTS -->
+        <div id="list-of-items">
+            <ul id="myUL">
+                <li><a href="#product1">Empire Of The Senseless</a></li>
+                <li><a href="#product2">In Memoriam To Identity</a></li>
+                <li><a href="#product3">Art Attack: A Short Cultural History Of The Avant-Garde</a></li>
+                <li><a href="#product4">Gang Of Souls: A Generation Of Beat Poets</a></li>
+                <li><a href="#product5">Women Of The Left Bank: Paris 1900-1940</a></li>
+                <li><a href="#product6">The Goncourt Brothers</a></li>
+                <li><a href="#product7">My Life and Loves in Greenwich Village</a></li>
+                <li><a href="#product8">My Sisters Hand In Mine</a></li>
+                <li><a href="#product9">Two Serious Ladies</a></li>
+                <li><a href="#product10">Let It Come Down</a></li>
+                <li><a href="#product11">Stories Of Paul Bowles</a></li>
+                <li><a href="#product12">Paris By Night</a></li>
+                <li><a href="#product13">A Prince Of Bohemia and Other Stories</a></li>
+                <li><a href="#product14">In Touch: The Letters Of Paul Bowles</a></li>
+                <li><a href="#product15">Upbeat: Nine Lives Of A Musical Cat</a></li>
+                <li><a href="#product16">Literal Madness: Three Novels</a></li>
+                <li><a href="#product17">Abortion: An Historial Romance</a></li>
+                <li><a href="#product18">Confederate General From Big Sur Dreaming Of Babylon Hawkline Monster</a></li>
+                <li><a href="#product19">Edna Webster Collection of Undiscovered Writings</a></li>
+                <li><a href="#product20">Hawkline Monster: A Gothic Western</a></li>
+                <li><a href="#product21">June 30th June 30th</a></li>
+                <li><a href="#product22">Loading Mercury with a Pitchfork</a></li>
+                <li><a href="#product23">Rommel Drives On Deep Into Egypt</a></li>
+                <li><a href="#product24">Sombrero Fallout: A Japanese Novel</a></li>
+                <li><a href="#product25">Trout Fishing in America</a></li>
+                <li><a href="#product26">Unfortunate Woman</a></li>
+                <li><a href="#product27">Charles Bukowski</a></li>
+                <li><a href="#product28">Public Intellectual Work Of Allen Ginsberg</a></li>
+                <li><a href="#product29">Did Christ Make Love?</a></li>
+                <li><a href="#product30">As The Wolf Howls At My Door</a></li>
+                <li><a href="#product31">Double View</a></li>
+                <li><a href="#product32">Wake Up. Were Almost There</a></li>
+                <li><a href="#product33">Who Walk in Darkness</a></li>
+                <li><a href="#product34">Revolt Of The Cockroad People</a></li>
+                <li><a href="#product35">How to Talk Dirty and Influence People</a></li>
+                <li><a href="#product36">From Bughouse Square To The Beat Generation</a></li>
+                <li><a href="#product37">Brunos Weekly</a></li>
+                <li><a href="#product38">Fragments of Greenwich Village</a></li>
+                <li><a href="#product39">Greenwich Village</a></li>
+                <li><a href="#product40">Sacred Band: A Litany Of Ingratitude</a></li>
+                <li><a href="#product41">Firing Line: The Hippies</a></li>
+                <li><a href="#product42">Absence Of The Hero: Uncollected Stories And Essays Volume 2: 1946-1992</a></li>
+                <li><a href="#product43">Beerspit Night and Cursing : The Correspondence of Charles Bukowski and Sheri Martinelli 1960-1967</a></li>
+                <li><a href="#product44">Betting on the Muse: Poems & Stories</a></li>
+                <li><a href="#product45">Between the earthquake the volcano and the leopard</a></li>
+                <li><a href="#product46">Bone Palace Ballet: New Poems</a></li>
+                <li><a href="#product47">Bring Me Your Love</a></li>
+                <li><a href="#product48">Burning In Water Drowning In Flame</a></li>
+                <li><a href="#product49">Archetype West: The Pacific Coast As A Literary Region</a></li>
+                <li><a href="#product50">Crooked Lines Of God: Poems 1949-1954</a></li>
+                <li><a href="#product51">Engendering Flood: Book One of Dust Shall be the Serpents Fool (Cantos I-IV)</a></li>
+                <li><a href="#product52">Man-Fate: The Swan Song Of Brother Antonius</a></li>
+                <li><a href="#product53">Prodigious Thrust</a></li>
+                <li><a href="#product54">River-Root: A Syzygy</a></li>
+                <li><a href="#product55">Residual Years</a></li>
+                <li><a href="#product56">Single Source: The Early Poems Of William Everson [1934-1940]</a></li>
+                <li><a href="#product57">Veritable Years: Poems 1949-1966 Volume II Of The Collected Poems</a></li>
+                <li><a href="#product58">Long time coming and a long time come</a></li>
+                <li><a href="#product59">William Everson: a collection of books & manuscripts</a></li>
+                <li><a href="#product60">Robert Creeley: A Biography</a></li>
+                
+            </ul>
+        </div>
+        <!-- ALL PRODUCTS -->
+        <div id="book-content">
+            <div id="all-products">
+                <h2 class="content-heading">ALL PRODUCTS</h2>
+                <div class="content-section" id="product1">
+                    <img src="https://www.goodbooksinthewoods.com/pictures/43378.jpg?v=1334241340" alt="" class="content-img">
+                    <p class="content-name">Empire Of The Senseless</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$17.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product2">
+                    <img src="https://m.media-amazon.com/images/I/41xe13H7PWL._AC_UF894,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">In Memoriam To Identity</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$21.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product3">
+                    <img src="https://m.media-amazon.com/images/I/71GPdCFs00L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Art Attack: A Short Cultural History Of The Avant-Garde</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$13.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTAzOTA4NTA3MDJeQTJeQWpwZ15BbWU4MDA2MzIwNjAx._V1_FMjpg_UX1000_.jpg" alt="" class="content-img">
+                    <p class="content-name">Gang Of Souls: A Generation Of Beat Poets</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product5">
+                    <img src="https://texas-press-us.imgix.net/covers/9780292790407.jpg?auto=format&w=298" alt="" class="content-img">
+                    <p class="content-name">Women Of The Left Bank: Paris 1900-1940</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product6">
+                    <img src="https://m.media-amazon.com/images/I/51IGVX3XwDL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">The Goncourt Brothers</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$22.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product7">
+                    <img src="https://m.media-amazon.com/images/I/717+UR3ws5L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">My Life and Loves in Greenwich Village</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product8">
+                    <img src="https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/sarahscoutpresents/images/view/8239e2fc1a1fff1ad107ffad69687bef/sarahscoutpresents-kate-daw-my-sister-s-hand-in-mine-cream-version-for-jd-2015.jpg" alt="" class="content-img">
+                    <p class="content-name">My Sisters Hand In Mine</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$27.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product9">
+                    <img src="https://m.media-amazon.com/images/I/91bASZaBYJL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Two Serious Ladies</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product10">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/01/LetItComeDown.jpg" alt="" class="content-img">
+                    <p class="content-name">Let It Come Down</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$18.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product11">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1407706765i/12046.jpg" alt="" class="content-img">
+                    <p class="content-name">Stories Of Paul Bowles</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$17.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product12">
+                    <img src="https://images-fe.ssl-images-amazon.com/images/I/51Rue-dAPVL._AC_UL600_SR600,600_.jpg" alt="" class="content-img">
+                    <p class="content-name">Paris By Night</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$29.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product13">
+                    <img src="https://m.media-amazon.com/images/I/61SNVRDDP+L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">A Prince Of Bohemia and Other Stories</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$21.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product14">
+                    <img src="https://m.media-amazon.com/images/I/61oV2ENu19L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">In Touch: The Letters Of Paul Bowles</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$26.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product15">
+                    <img src="https://m.media-amazon.com/images/I/71rfBVVrK2L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Upbeat: Nine Lives Of A Musical Cat</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$29.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product16">
+                    <img src="https://m.media-amazon.com/images/I/81Ni5ht207L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Literal Madness: Three Novels</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$16.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+		        <div class="content-section" id="product17">
+                    <img src="https://m.media-amazon.com/images/I/51cMO88NgQL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Abortion: An Historial Romance</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$24.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product18">
+                    <img src="https://m.media-amazon.com/images/I/51kS07+nDwL.jpg" alt="" class="content-img">
+                    <p class="content-name">Confederate General From Big Sur Dreaming Of Babylon Hawkline Monster</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$28.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product19">
+                    <img src="https://m.media-amazon.com/images/I/71G-8a7RpKL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Edna Webster Collection of Undiscovered Writings</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product20">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/HawklineMonster.JPG/220px-HawklineMonster.JPG" alt="" class="content-img">
+                    <p class="content-name">Hawkline Monster: A Gothic Western</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product21">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Cover_of_Richard_Brautigan%27s_June_30th%2C_June_30th.jpg" alt="" class="content-img">
+                    <p class="content-name">June 30th June 30th</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$16.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product22">
+                    <img src="https://rareamericana.cdn.bibliopolis.com/pictures/3732070_1.jpg?v=1662664912" alt="" class="content-img">
+                    <p class="content-name">Loading Mercury with a Pitchfork</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product23">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/24/RommelDrivesOnDeepIntoEgypt.jpg" alt="" class="content-img">
+                    <p class="content-name">Rommel Drives On Deep Into Egypt</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product24">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SombreroFallout.jpg" alt="" class="content-img">
+                    <p class="content-name">Sombrero Fallout: A Japanese Novel</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$24.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product25">
+                    <img src="https://1960sdaysofrage.files.wordpress.com/2017/06/brautigancover.jpeg" alt="" class="content-img">
+                    <p class="content-name">Trout Fishing in America</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$17.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+		        <div class="content-section" id="product26">
+                    <img src="https://mpd-biblio-covers.imgix.net/9780312277109.jpg?w=300" alt="" class="content-img">
+                    <p class="content-name">Unfortunate Woman</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$12.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product27">
+                    <img src="https://m.media-amazon.com/images/I/81OBVqzun9L._AC_UF894,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Charles Bukowski</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$24.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product28">
+                    <img src="https://m.media-amazon.com/images/I/61I7IH8sryL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Public Intellectual Work Of Allen Ginsberg</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$21.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product29">
+                    <img src="https://d3525k1ryd2155.cloudfront.net/h/337/071/1456071337.0.l.jpg" alt="" class="content-img">
+                    <p class="content-name">Did Christ Make Love?</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+		        <div class="content-section" id="product30">
+                    <img src="https://m.media-amazon.com/images/I/51EFFHES34L._AC_UF894,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">As The Wolf Howls At My Door</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$14.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product31">
+                    <img src="https://pictures.abebooks.com/inventory/md/md31335414127.jpg" alt="" class="content-img">
+                    <p class="content-name">Double View</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$17.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product32">
+                    <img src="https://m.media-amazon.com/images/I/61G1Z0Q3kdL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Wake Up. Were Almost There</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$29.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product33">
+                    <img src="https://m.media-amazon.com/images/I/51JtrHwfoqL.jpg" alt="" class="content-img">
+                    <p class="content-name">Who Walk in Darkness</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product34">
+                    <img src="https://cdn.shopify.com/s/files/1/0817/5219/products/THE_REVOLT_OF_THE_COCKROACH_PEOPLE-1_1200x1200.jpg?v=1601522451" alt="" class="content-img">
+                    <p class="content-name">Revolt Of The Cockroad People</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="content-price">$18.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product35">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/HowToTalkDirtyAndInfluencePeople.jpg" alt="" class="content-img">
+                    <p class="content-name">How to Talk Dirty and Influence People</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product36">
+                    <img src="https://m.media-amazon.com/images/I/51JSD9FT25L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">From Bughouse Square To The Beat Generation</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product37">
+                    <img src="https://m.media-amazon.com/images/I/61Xr2C54cwL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Brunos Weekly</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$25.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product38">
+                    <img src="https://m.media-amazon.com/images/I/71yh1ZMfsBL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Fragments of Greenwich Village</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$12.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product39">
+                    <img src="https://m.media-amazon.com/images/I/A1WD+4oDXhL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Greenwich Village</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$23.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product40">
+                    <img src="https://m.media-amazon.com/images/I/81T3dFGRkpL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Sacred Band: A Litany Of Ingratitude</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$18.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product41">
+                    <img src="https://histories.hoover.org/civil-discourse/on-the-firing-line/assets/fYVugxMgk5/wordsmith-placeholder-1504x1841.jpeg" alt="" class="content-img">
+                    <p class="content-name">Firing Line: The Hippies</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$29.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product42">
+                    <img src="https://storage.googleapis.com/circlesoft/document/photos/002/206/497/large_9780872865310.jpg?1425061007" alt="" class="content-img">
+                    <p class="content-name">Absence Of The Hero: Uncollected Stories And Essays Volume 2: 1946-1992</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$24.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product43">
+                    <img src="https://m.media-amazon.com/images/I/71DQQ0Iij4L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Beerspit Night and Cursing : The Correspondence of Charles Bukowski and Sheri Martinelli 1960-1967</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product44">
+                    <img src="https://m.media-amazon.com/images/I/813poSjf+UL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Betting on the Muse: Poems & Stories</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$26.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product45">
+                    <img src="https://pictures.abebooks.com/inventory/1290177289.jpg" alt="" class="content-img">
+                    <p class="content-name">Between the earthquake the volcano and the leopard</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$16.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product46">
+                    <img src="https://m.media-amazon.com/images/I/41ML5bU3weL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Bone Palace Ballet: New Poems</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product47">
+                    <img src="https://m.media-amazon.com/images/I/91pF+yOEYjL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Bring Me Your Love</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$24.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+		        <div class="content-section" id="product48">
+                    <img src="https://prodimage.images-bn.com/pimages/9780876851913_p0_v7_s1200x630.jpg" alt="" class="content-img">
+                    <p class="content-name">Burning In Water Drowning In Flame</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$30.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+		        <div class="content-section" id="product49">
+                    <img src="https://m.media-amazon.com/images/I/51cgZ4hW-+L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Archetype West: The Pacific Coast As A Literary Region</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$25.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product50">
+                    <img src="https://m.media-amazon.com/images/I/61Txup1MjqL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Crooked Lines Of God: Poems 1949-1954</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$27.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product51">
+                    <img src="https://image.isu.pub/110824040543-f1b9383d35c04ca1aa5d77569aa26cf0/jpg/page_1.jpg" alt="" class="content-img">
+                    <p class="content-name">Engendering Flood: Book One of Dust Shall be the Serpents Fool (Cantos I-IV)</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$27.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product52">
+                    <img src="https://m.media-amazon.com/images/I/71jG9hYpnSL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Man-Fate: The Swan Song Of Brother Antonius</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$27.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product53">
+                    <img src="https://m.media-amazon.com/images/I/91mEWmXCZNL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Prodigious Thrust</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$10.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product54">
+                    <img src="https://m.media-amazon.com/images/I/31nHS+orHqL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">River-Root: A Syzygy</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$16.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product55">
+                    <img src="https://m.media-amazon.com/images/I/51+o3l4zwML._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Residual Years</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$23.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product56">
+                    <img src="https://m.media-amazon.com/images/I/514Qc8vDyFL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Single Source: The Early Poems Of William Everson [1934-1940]</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$17.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product57">
+                    <img src="https://m.media-amazon.com/images/I/51yvGHV1B8L._AC_UF350,350_QL50_.jpg" alt="" class="content-img">
+                    <p class="content-name">Veritable Years: Poems 1949-1966 Volume II Of The Collected Poems</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$20.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product58">
+                    <img src="https://m.media-amazon.com/images/I/81Dh1dKE-5L.jpg" alt="" class="content-img">
+                    <p class="content-name">Long time coming and a long time come</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product59">
+                    <img src="https://m.media-amazon.com/images/I/716vZeHvlWL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">William Everson: a collection of books & manuscripts</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+                <div class="content-section" id="product60">
+                    <img src="https://m.media-amazon.com/images/I/41PTGDR3NDL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                    <p class="content-name">Robert Creeley: A Biography</p>
+                    <!-- star rating -->
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                    </div>
+                    <p class="content-price">$15.00</p>
+                    <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                </div>
+
+
+                <div class="Clear"></div>
+            </div>
+
+        </div>
+        <!-- BACK TO TOP -->
+        <div id="Return">
+            <a href="#Books" class="back-to-top">Back to top</a>
+        </div>
+        <!-- ABOUT US -->
+        <div id="footer">
+            <div class="info">
+                <h2 class="info-heading">ABOUT US <br></h2>
+                <p class="info-text">
+                    Welcome to Tuan Dat Bookstore, your one-stop destination for all things literary. We are dedicated to providing a unique and enriching experience for book lovers of all ages and interests. At Tuan Dat Bookstore, we believe in the power of books to inspire, educate, and entertain, and we strive to create a haven where bibliophiles can immerse themselves in the world of words.
+                    Established in 2021, Tuan Dat Bookstore has been serving the community for over 2 years. Our bookstore is located in the heart of Hanoi, Vietnam, and we take pride in being a local, independent bookstore that supports and fosters a love for reading in our community.
+                </p>
+            </div>
+            <div class="info-connect">
+                <h2 class="info-heading">STAY CONNECTED <br></h2>
+                <div class="info-connect-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100010188780771&sk=about"><i class="ti-facebook"></i></a>
+                    <a href="https://www.instagram.com/manhnguyen.41/"><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-twitter"></i></a>
+                    <a href=""><i class="ti-email"></i> <br><br></a>
+
+                    <i class="ti-headphone-alt" >: 0123456789 <br></i>
+                    <i class="ti-location-pin">: Hanoi, Vietnam <br></i>
+                </div>
+            </div>
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/351000639_1644802196016209_8828439304414396329_n.png?stp=dst-png_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=wu1_OJeQiN0AX9Hn5IO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQkV-eWMPCg09cXkaFzA7ScMIIXGY2C7p-G9XWLspHpRg&oe=64AE5AC5" alt="" class="info-img">
+
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="product_script.js"></script>
+</body>
+</html>

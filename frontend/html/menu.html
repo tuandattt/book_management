@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Online Web</title>
+    <link rel="stylesheet" href="D:\DatabaseLab\public\decor.css">
+    <link rel="stylesheet" href="D:\DatabaseLab\public\themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="menu_script.js"></script>
+    <script src="login_script.js"></script>
+</head>
+
+<body>
+    <div id="Main">
+        <!-- HEADER -->
+        <div id="Header">
+            <div class="Brand-name">BOOKSTORE <span style="color:rgb(203, 144, 144); font-weight: bold; font-size: 50px;font-style:italic;">TUAN DAT <i class="brand-icon ti-book"></i></span></div>
+            <button class="logOutButton" onclick="logOut()"><i class="fa fa-sign-out"></i>   Log out</button>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="javascript:window.location.reload(true)">HOME</a></li>
+                <li><a href="D:/DatabaseLab/public/product.html" target="_blank">BOOKS</a></li>
+                <li><a href="#best-seller" >BEST SELLERS</a></li>
+                <li><a href="#Sales">SALES</a></li>
+                <li><a href="#footer">ABOUT US</a></li>
+            </ul>
+            <div class="shop-icon">
+                <button id="shop-btn">
+                    <i class="ti-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+                <!-- SLIDER -->
+                <div id="slider">
+                    <div class="text-content">
+                        <h2 class="heading">Bookstore TUAN DAT</h2>
+                        <div class="slogan">Where your imagination comes alive</div>
+                    </div>
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/editorial/botm/pageupdates/BOTM_-_Top_categories_June.jpg" class="slider-img">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="https://www.washingtonpost.com/resizer/Dr7v58qAfxnK6BIa6C43t_GZN5k=/arc-anglerfish-washpost-prod-washpost/public/YG6OQE2SGRCGTIFWUL4VMRVVRU.jpg" class="slider-img">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="https://i.guim.co.uk/img/media/77e3e93d6571da3a5d77f74be57e618d5d930430/0_0_2560_1536/master/2560.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=ceefb6a9d3fd5b8e1dad90e40bcba8ad" class="slider-img">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="https://interimweb.s3-ap-southeast-1.amazonaws.com/merchant-images/products/BOOKSTORES+AND+OFFICEWAREHOUSE/BOOKSTORE+AND+OFFICEWAREHOUSE+-+Bookstore+(2).jpg" class="slider-img">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" ></span> 
+                    <span class="dot" ></span> 
+                    <span class="dot" ></span> 
+                    <span class="dot" ></span> 
+                </div>
+                <script src="slider.js"></script>
+                <!-- THE MODAL -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">YOUR SHOPPING CART</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Product</span>
+                                <span class="cart-price cart-header cart-column">Price</span>
+                                <span class="cart-quantity cart-header cart-column">Quantity</span>
+                            </div>
+                            <!-- LIST OF ITEMS THAT CUSTOMER BUYS -->
+                            <div class="cart-items">
+        
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Sum: </strong>
+                                <span class="cart-total-price">0 $</span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Close</button>
+                            <button type="button" class="btn btn-primary order" >Pay up</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CONTENT: BEST SELLERS -->
+                <div id="content">
+                    <div id="best-seller">
+                        <h2 class="content-heading">Best sellers</h2>
+                        <div class="content-section">
+                            <img src="https://www.goodbooksinthewoods.com/pictures/43378.jpg?v=1334241340" alt="" class="content-img">
+                            <p class="content-name">Empire Of The Senseless</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$17.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://cdn.shopify.com/s/files/1/0817/5219/products/THE_REVOLT_OF_THE_COCKROACH_PEOPLE-1_1200x1200.jpg?v=1601522451" alt="" class="content-img">
+                            <p class="content-name">Revolt Of The Cockroad People</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$18.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/71GPdCFs00L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">Art attack: A short cultural history of the Avant-Garde</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$13.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTAzOTA4NTA3MDJeQTJeQWpwZ15BbWU4MDA2MzIwNjAx._V1_FMjpg_UX1000_.jpg" alt="" class="content-img">
+                            <p class="content-name">Gang of Souls: A generation of beat poets</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$10.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://texas-press-us.imgix.net/covers/9780292790407.jpg?auto=format&w=298" alt="" class="content-img">
+                            <p class="content-name">Women of the left bank: Paris 1900-1940</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$10.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/51IGVX3XwDL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">The Goncourt Brothers</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$22.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/717+UR3ws5L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">My Life and Loves in Greenwich Village</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="content-price">$15.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/sarahscoutpresents/images/view/8239e2fc1a1fff1ad107ffad69687bef/sarahscoutpresents-kate-daw-my-sister-s-hand-in-mine-cream-version-for-jd-2015.jpg" alt="" class="content-img">
+                            <p class="content-name">My Sisters Hand In Mine</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$27.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/91bASZaBYJL._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">Two Serious Ladies</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$10.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/01/LetItComeDown.jpg" alt="" class="content-img">
+                            <p class="content-name">Let It Come Down</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$18.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1407706765i/12046.jpg" alt="" class="content-img">
+                            <p class="content-name">Stories of Paul Bowles</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$17.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://images-fe.ssl-images-amazon.com/images/I/51Rue-dAPVL._AC_UL600_SR600,600_.jpg" alt="" class="content-img">
+                            <p class="content-name">Paris By Night</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$29.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/61SNVRDDP+L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">A Prince Of Bohemia and Other Stories</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$21.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/61oV2ENu19L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">In Touch: The Letters Of Paul Bowles</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$26.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/71rfBVVrK2L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">Upbeat: Nine Lives Of A Musical Cat</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$29.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/81Ni5ht207L._AC_UF1000,1000_QL80_.jpg" alt="" class="content-img">
+                            <p class="content-name">Literal Madness: Three Novels</p>
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </div>
+                            <p class="content-price">$16.00</p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+        
+                        <div class="Clear"></div>
+        
+                    </div>
+                    <!-- SALES HERE -->
+                    <div id="Sales">
+                        <h2 class="content-heading">Sales</h2>
+                        <div class="content-section">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387713496i/18353.jpg" alt="" class="content-img">
+                            <p class="content-name">Anai Nin: A Biography</p>                        
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked "></span>
+                                <span class="fa fa-star "></span>           
+                            </div>
+                            <p class="content-price">$14.00 <del class="del-price">$17.00</del></p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://d3525k1ryd2155.cloudfront.net/f/520/408/9780821408520.OL.0.l.jpg" alt="" class="content-img">
+                            <p class="content-name">On The Left Bank: 1929-1933</p>                        
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>           
+                            </div>
+                            <p class="content-price">$15.00 <del class="del-price">$18.00</del></p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/418hxu7vOdL.jpg" alt="" class="content-img">
+                            <p class="content-name">SOS: Poems 1961-2013</p>                        
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>           
+                            </div>
+                            <p class="content-price">$13.00 <del class="del-price">$16.00</del></p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/51oMw1obKcL.jpg" alt="" class="content-img">
+                            <p class="content-name">Beatdom</p>                        
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>           
+                            </div>
+                            <p class="content-price">$15.00 <del class="del-price">$19.00</del></p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+                        <div class="content-section">
+                            <img src="https://m.media-amazon.com/images/I/61gJS-JaGbS._AC_UF350,350_QL50_.jpg" alt="" class="content-img">
+                            <p class="content-name">Eulogies</p>                        
+                            <!-- star rating -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>           
+                            </div>
+                            <p class="content-price">$20.00 <del class="del-price">$22.00</del></p>
+                            <button class="btn-cart">Add to <i class="shop-btn ti-shopping-cart"></i></button>
+                        </div>
+        
+                        <div class="Clear"></div>
+                    </div>
+                
+                </div>
+                <!-- BOTTOM SLIDER -->
+                <div class="slideshow-container">
+                    <div class="bottom_mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/06/27/26965_PCL_2_Inspire-Your-Life_06-27.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" class="slider-img">
+                    </div>
+                    
+                    <div class="bottom_mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/06/27/26965_PCL_1_Our-Favorite-Found-Families_06-27.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" class="slider-img" >
+                    </div>
+                    
+                    <div class="bottom_mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/06/27/26965_PCL_3_Start-the-Party_06-27.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" class="slider-img">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                </div>
+                <br>   
+                <div style="text-align:center">
+                    <span class="bottom_dot" onclick="currentSlide(1)"></span> 
+                    <span class="bottom_dot" onclick="currentSlide(2)"></span> 
+                    <span class="bottom_dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <script src="bottom_slider.js"></script> 
+                <!-- BACK TO TOP -->
+                <div id="Return">
+                    <a href="#Main" class="back-to-top">Back to top</a>
+                </div>
+                <!-- ABOUT US -->
+                <div id="footer">
+                    <div class="info">
+                        <h2 class="info-heading">ABOUT US <br></h2>
+                        <p class="info-text">
+                            Welcome to Tuan Dat Bookstore, your one-stop destination for all things literary. We are dedicated to providing a unique and enriching experience for book lovers of all ages and interests. At Tuan Dat Bookstore, we believe in the power of books to inspire, educate, and entertain, and we strive to create a haven where bibliophiles can immerse themselves in the world of words.
+                            Established in 2021, Tuan Dat Bookstore has been serving the community for over 2 years. Our bookstore is located in the heart of Vietnam, Hanoi, and we take pride in being a local, independent bookstore that supports and fosters a love for reading in our community.
+                        </p>
+                    </div>
+                    <div class="info-connect">
+                        <h2 class="info-heading">STAY CONNECTED <br></h2>
+                        <div class="info-connect-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100010188780771&sk=about"><i class="ti-facebook"></i></a>
+                            <a href="https://www.instagram.com/manhnguyen.41/"><i class="ti-instagram"></i></a>
+                            <a href=""><i class="ti-twitter"></i></a>
+                            <a href=""><i class="ti-email"></i> <br><br></a>
+        
+                            <i class="ti-headphone-alt" >: 0123456789 <br></i>
+                            <i class="ti-location-pin">: Hanoi, Vietnam <br></i>
+                        </div>
+                    </div>
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/351000639_1644802196016209_8828439304414396329_n.png?stp=dst-png_p403x403&_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sdGkf3cL91wAX80uaHv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTvMH-l0jEbMMgMoZZzIg9izgxgaLMkPFA_uvWnYHbLDw&oe=64D81A45" alt="" class="info-img">
+        
+                </div>
+        
+            </div>
+            <!-- Process with JS -->
+            <script src="menu_script.js"></script>
+            <script src="login_script.js"></script>
+        </body>
+        </html>
